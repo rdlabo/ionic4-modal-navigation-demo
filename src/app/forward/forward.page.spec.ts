@@ -1,22 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ForwordPage } from './forword.page';
+import { ForwardPage } from './forward.page';
 
-describe('ForwordPage', () => {
-  let component: ForwordPage;
-  let fixture: ComponentFixture<ForwordPage>;
+describe('ForwardPage', () => {
+  let component: ForwardPage;
+  let fixture: ComponentFixture<ForwardPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ForwordPage ],
+      declarations: [ ForwardPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ForwordPage);
+    fixture = TestBed.createComponent(ForwardPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
