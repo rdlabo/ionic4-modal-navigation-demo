@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomePage } from './home/home.page';
+import { ModalWrapperPage } from './modal-wrapper/modal-wrapper.page';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
-  { path: 'forward', loadChildren: './forward/forward.module#ForwardPageModule' },
+  { path: 'home', component: HomePage},
 ];
 
 @NgModule({

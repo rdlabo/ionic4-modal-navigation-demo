@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Optional } from '@angular/core';
+import { Router } from '@angular/router';
+import { ModalController, IonNav } from '@ionic/angular';
 
 @Component({
   selector: 'app-modal-wrapper',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalWrapperPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    @Optional() public nav: IonNav,
+  ) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+  navigationPush() {
+    this.nav.push(ModalWrapperPage);
   }
-
 }
